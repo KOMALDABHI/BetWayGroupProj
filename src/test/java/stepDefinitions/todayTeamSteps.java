@@ -34,7 +34,7 @@ public class todayTeamSteps {
 
     @Then("User gets all team names with a match today")
     public void user_gets_all_team_names_with_a_match_today() {
-//
+
        // List<WebElement> results = driver.findElements(By.tagName("//ul[@role='list']/li"));
         List<WebElement> results =  driver.findElements(By.xpath("//ul[@role='list']//div[contains(@class,'Promo')]"));
 
