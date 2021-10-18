@@ -4,7 +4,7 @@ Feature: As a sports user,
   Scenario: Use the search option to find all articles related to ‘sports’.
             Output the first heading and the last heading returned on the page
 
-    Given User navigate to the "https://www.bbc.co.uk/sport/football/scores-fixtures"
+    Given User is on scores-fixtures page
     When  User enter text "sports" in search textbox
     And   User click on search button
     Then  User should see the corresponding articles related to sports
