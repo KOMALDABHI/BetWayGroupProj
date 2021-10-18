@@ -14,7 +14,7 @@ public class SearchPageSteps {
     @When("User enter text {string} in search textbox")
     public void user_enter_text_in_search_textbox(String string) {
         System.out.println("String from feature file"+string);
-        driver.findElement(By.id("orb-search-q")).sendKeys(string);
+        driver.findElement(By.id("search-input")).sendKeys(string);
     }
 
     @When("User click on search button")
